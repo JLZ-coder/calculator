@@ -15,12 +15,11 @@ html, body {
         font-size: 1em;
     }
     
-    #preCalculations {
-        height: 5em;
+    #lastResult {
+        height: 2em;
         width: 95%;
         display: flex;
         justify-content: flex-end;
-        overflow: scroll;
         font-size: 1.5em;
     }
     
@@ -31,7 +30,6 @@ html, body {
         justify-content: flex-end;
         align-items: center;
         font-size: 4em;
-        overflow: scroll;
     }
 
     #buttonsGrid {
@@ -107,12 +105,11 @@ html, body {
         font-size: 2em;
     }
     
-    #preCalculations {
-        height: 5em;
+    #lastResult {
+        height: 2em;
         width: 80%;
         display: flex;
         justify-content: flex-end;
-        overflow: scroll;
         font-size: 1.5em;
     }
     
@@ -123,7 +120,6 @@ html, body {
         justify-content: flex-end;
         align-items: center;
         font-size: 4em;
-        overflow: scroll;
     }
 
     #buttonsGrid {
@@ -199,12 +195,11 @@ html, body {
         font-size: 2em;
     }
     
-    #preCalculations {
-        height: 5em;
+    #latResult {
+        height: 2em;
         width: 80%;
         display: flex;
         justify-content: flex-end;
-        overflow: scroll;
         font-size: 1.5em;
     }
     
@@ -215,7 +210,6 @@ html, body {
         justify-content: flex-end;
         align-items: center;
         font-size: 4em;
-        overflow: scroll;
     }
 
     #buttonsGrid {
