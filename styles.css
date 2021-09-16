@@ -1,37 +1,285 @@
 html, body {
     height: 100%;
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    font-size: 1em;
+/*Mobile*/
+@media (min-width: 320px) {
+    h1 {
+        font-size: 1em;
+    }
+    
+    #preCalculations {
+        height: 5em;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        overflow: scroll;
+        font-size: 1.5em;
+    }
+    
+    #display {
+        height: 2em;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 4em;
+        overflow: scroll;
+    }
+
+    #buttonsGrid {
+        height: 95%;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0.5em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #buttonsGrid * {
+        gap: 0.5em;
+    }
+
+    #buttonsGrid button {
+        border-radius: 10px;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+    #clearButtonsGrid {
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid #ceroButton {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+    
+    #operatorButtonsGrid {
+        width: 100%;
+        grid-row: 1 / 6;
+        grid-column: 4 / 5;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .digitButton {
+        color: white;
+        background-color: rgb(56, 56, 56);
+    }
+
+    .operatorButton {
+        color: black;
+        background-color: rgb(236, 236, 236);
+    }
+
+    .clearButton {
+        color: black;
+        background-color: orange;
+    }
 }
 
-#preCalculations {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+/*Tablets*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    #preCalculations {
+        height: 5em;
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        overflow: scroll;
+        font-size: 1.5em;
+    }
+    
+    #display {
+        height: 2em;
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 4em;
+        overflow: scroll;
+    }
+
+    #buttonsGrid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0.5em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #buttonsGrid * {
+        gap: 0.5em;
+    }
+
+    #buttonsGrid button {
+        border-radius: 10px;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+    #clearButtonsGrid {
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid #ceroButton {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+    
+    #operatorButtonsGrid {
+        width: 100%;
+        grid-row: 1 / 6;
+        grid-column: 4 / 5;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .digitButton {
+        color: white;
+        background-color: rgb(56, 56, 56);
+    }
+
+    .operatorButton {
+        color: black;
+        background-color: rgb(236, 236, 236);
+    }
+
+    .clearButton {
+        color: black;
+        background-color: orange;
+    }
 }
 
-#display {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 3em;
-}
 
-#buttonsGrid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(5, auto);
-    gap: 5px;
-}
+/*Desktop or bigger*/
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    #preCalculations {
+        height: 5em;
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        overflow: scroll;
+        font-size: 1.5em;
+    }
+    
+    #display {
+        height: 2em;
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 4em;
+        overflow: scroll;
+    }
 
-.digitButton {
+    #buttonsGrid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0.5em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #buttonsGrid * {
+        gap: 0.5em;
+    }
+
+    #buttonsGrid button {
+        border-radius: 10px;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+    #clearButtonsGrid {
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #digitsButtonsGrid #ceroButton {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+    
+    #operatorButtonsGrid {
+        width: 100%;
+        grid-row: 1 / 6;
+        grid-column: 4 / 5;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .digitButton {
+        color: white;
+        background-color: rgb(56, 56, 56);
+    }
+
+    .operatorButton {
+        color: black;
+        background-color: rgb(236, 236, 236);
+    }
+
+    .clearButton {
+        color: black;
+        background-color: orange;
+    }
 }

@@ -3,6 +3,7 @@
     <head>
         <title>Calculator</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -11,23 +12,29 @@
         <div id="preCalculations"> 13143 +</div>
         <div id="display">1432432</div>
         <div id="buttonsGrid">
-            <button class="clearButton">CLEAR</button>
-            <button class="digitButton">1</button>
-            <button class="digitButton">2</button>
-            <button class="digitButton">3</button>
-            <button class="digitButton">4</button>
-            <button class="digitButton">5</button>
-            <button class="digitButton">6</button>
-            <button class="digitButton">7</button>
-            <button class="digitButton">8</button>
-            <button class="digitButton">9</button>
-            <button class="ceroButton">0</button>
-            <button class="operatorButton">.</button>
-            <button class="operatorButton">+</button>
-            <button class="operatorButton">-</button>
-            <button class="operatorButton">*</button>
-            <button class="operatorButton">/</button>
-            <button class="operatorButton">=</button>
+            <div id="clearButtonsGrid">
+                <button class="clearButton">AC</button>
+            </div>
+            <div id="digitsButtonsGrid">
+                <button class="digitButton">1</button>
+                <button class="digitButton">2</button>
+                <button class="digitButton">3</button>
+                <button class="digitButton">4</button>
+                <button class="digitButton">5</button>
+                <button class="digitButton">6</button>
+                <button class="digitButton">7</button>
+                <button class="digitButton">8</button>
+                <button class="digitButton">9</button>
+                <button id="ceroButton" class="digitButton">0</button>
+                <button class="digitButton">.</button>
+            </div>
+            <div id="operatorButtonsGrid">
+                <button class="operatorButton">/</button>
+                <button class="operatorButton">*</button>
+                <button class="operatorButton">-</button>
+                <button class="operatorButton">+</button>
+                <button class="operatorButton">=</button>
+            </div>
         </div>
     </body>
 </html>
