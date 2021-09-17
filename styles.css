@@ -9,18 +9,17 @@ html, body {
     align-items: center;
 }
 
+.active {
+    box-shadow: 0 0 0 transparent !important;
+    position: relative;
+    left: 3px;
+    top: 3px;
+}
+
 /*Mobile*/
 @media (min-width: 320px) {
     h1 {
         font-size: 1em;
-    }
-    
-    #lastResult {
-        height: 2em;
-        width: 95%;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 1.5em;
     }
     
     #display {
@@ -105,17 +104,9 @@ html, body {
         font-size: 2em;
     }
     
-    #lastResult {
-        height: 2em;
-        width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 1.5em;
-    }
-    
     #display {
         height: 2em;
-        width: 80%;
+        width: 60%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -123,7 +114,7 @@ html, body {
     }
 
     #buttonsGrid {
-        width: 80%;
+        width: 60%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -190,22 +181,14 @@ html, body {
 
 
 /*Desktop or bigger*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     h1 {
         font-size: 2em;
     }
     
-    #latResult {
-        height: 2em;
-        width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 1.5em;
-    }
-    
     #display {
         height: 2em;
-        width: 80%;
+        width: 40%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -213,7 +196,7 @@ html, body {
     }
 
     #buttonsGrid {
-        width: 80%;
+        width: 40%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
